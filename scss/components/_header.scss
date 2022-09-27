@@ -104,6 +104,12 @@
         }
     }
 
+    .menu__items--mobile {
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+
     &__button {
         color: inherit;
     }

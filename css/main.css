@@ -162,6 +162,11 @@ img {
   border: 0.5px solid #9E9C9C;
   border-radius: 6px;
 }
+@media (min-width: 768px) {
+  .menu .menu__items--mobile {
+    display: none;
+  }
+}
 .menu__button {
   color: inherit;
 }
