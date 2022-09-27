@@ -1,0 +1,17 @@
+$title-color: #A59DFF;
+$main-color: #414141;
+$sub-menu: #878787;
+$menu-color: #F8F7F7;
+$secondary-color: #BDC1BE;
+
+$active-color: linear-gradient(91.25deg, #bdb7fd -66%, #301df9 263.02%);
+$background-color: #1D1D1D;
+$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+@mixin buttons-style {
+    color: #DEFFE1;
+    background: linear-gradient(91.25deg, #A59DFF -66%, #1500FF 263.02%);
+    border-radius: 5px;
+}

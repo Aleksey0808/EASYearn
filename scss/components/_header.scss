@@ -1,0 +1,137 @@
+.header {
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0 20px 0;
+    }
+  }
+  
+  .menu {
+    font-family: 'Actor';
+
+    @media (max-width: 767px) {
+        opacity: 0;  
+        visibility: hidden;
+        pointer-events: none;
+
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 274px;
+        height: 333px;
+        
+
+        background: rgba(56, 56, 56, 0.9);
+        border-radius: 10px;
+        transition: opacity $animation, visibility $animation; 
+    }
+
+    
+
+    &.is-open {
+        opacity: 1;  
+        visibility: visible;
+        pointer-events: auto;
+
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 28px 0 40px 0;
+    }
+
+    &__item {
+        position: relative;
+        
+        font-size: 30px;
+        line-height: 1.2;
+
+        padding-bottom: 7px;
+
+        &:not(:last-child) {
+            margin-bottom: 3px;
+        }
+    }
+
+    &__link {
+        color: $menu-color;
+
+        @media (max-width: 767px) {
+            &::after {
+            content: "";
+            display: flex;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+
+            transform: translate(-50%);
+            
+            border-radius: 2px;
+            width: 45px;
+            height: 0px;
+
+            border: 1px solid #FFFFFF;
+        }
+        }
+
+        
+    }
+
+    &__enter {
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+
+        font-size: 16px;
+        line-height: 1.18;
+        color: $menu-color;
+    }
+
+    &__items {
+        padding: 4px 9px;
+
+        &:not(:first-child) {
+            border: 0.5px solid #9E9C9C;
+            border-radius: 6px;
+            
+        }
+    }
+
+    &__button {
+        color: inherit;
+    }
+}
+
+  .menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 10;
+
+    @media (min-width: 767px) {
+        display: none;
+    }
+  }
+
+  .menu-button .icon-close {
+    display: none;
+  }
+
+  .menu-button.is-open .icon-close{
+    display: block;
+  }
+  
+  .menu-button.is-open .icon-menu {
+    display: none;
+  }
+  
+  

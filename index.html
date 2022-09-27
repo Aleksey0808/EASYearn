@@ -1,27 +1,67 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ru">
 <head>
   <title>EASYearn</title>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Actor&family=Audiowide&family=IBM+Plex+Sans:wght@500&family=Inter:wght@400;500;600;700;800;900&family=Lato:wght@700;900&family=Montserrat:wght@700&family=Mulish:wght@700;800&family=Nunito:wght@400;700&family=Public+Sans:wght@500&family=Roboto:wght@400;500&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/main.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-skalable=0">
   <link rel="shortcut icon" href="./images/ico/logo.ico">
 </head>
 <body>
-  <div class="header">
-    <div class="container header__wrapper">
-      <a class="logo" href="">EASY<span class="logo--white"></span>earn</a>
-      <button class="menu-button">
-        <svg width="25" height="25">
-          <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
-          <use class="icon-close" href="./images/symbol-defs.svg#close-menu"></use>
-        </svg>
-      </button>
+  <div class="bg">
+    <div class="header">
+      <div class="container header__wrapper">
+        <a class="logo" href="">EASY<span class="logo--white">earn</span></a>
+        <nav class="menu" data-menu>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="">Main</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="">How it works?</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="">Choose platform</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="">Payments</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="">Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="menu__enter">
+            <li class="menu__items">
+              <button class="menu__button">
+                Sign in
+              </button>
+            </li>
+            <li class="menu__items">
+              <button class="menu__button">
+                Sign up
+              </button>
+            </li>
+        </ul>
+        </nav>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg width="25" height="25" aria-label="Mobile menu switch">
+            <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
+            <use class="icon-close" href="./images/symbol-defs.svg#close-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="hero">
+  
     </div>
   </div>
-
+  
+  <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 
