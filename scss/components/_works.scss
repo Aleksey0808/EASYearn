@@ -1,52 +1,109 @@
 .works {
     padding-top: 80px;
 
+		&__wrapper {
+
+			@media (min-width: 1200px) {
+				display: flex;
+			}
+		}
+
     &__title {
-        font-size: 32px;
-        line-height: 1.28;
+        font-family: 'Audiowide';
+        font-size: 28px;
+        line-height: 1.2;
         text-align: center;
 
         background: linear-gradient(89.97deg, #5748FF 19.47%, #873EFF 110.15%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+
+        margin-bottom: 80px;
+
+				@media (min-width: 1200px) {
+					font-size: 46px;
+					line-height: 1.1;
+				}
     }
 
     &__subtitle {
         font-weight: 500;
         font-size: 18px;
         line-height: 1.16;
+				color: $main-color;
 
-        
+				@media (max-width: 1199px) {
+					margin-bottom: 80px;
+				}
+
+				@media (min-width: 1200px) {
+					text-align: justify;
+					margin-right: 45px;
+				}
     }
 
     &__list {
         text-align: center;
         color: $works-color;
+
+        @media (min-width: 768px) {
+            margin: -15px;
+        }
+
+				@media (min-width: 1200px) {
+					display: flex;
+					margin: -60px;
+				}
     }
 
     &__imag {
+        margin-bottom: 15px;
 
     }
 
     &__item {
+        display: inline-block;
         border: 1px solid #A59DFF;
         backdrop-filter: blur(2px);
         border-radius: 15px;
 
         padding: 43px 43px 35px;
+
+				@media (max-width: 767px) {
+					&:not(:last-child) {
+            margin-bottom: 80px;
+        }
+				}
+        
+        @media (min-width: 768px) {
+						flex-basis: calc((100% - 3 * 30px)/3);
+						margin: 15px;
+        }
+
+				@media (min-width: 1200px) {
+					flex-basis: calc((100% - 3 * 120px)/3);
+					margin: 60px;
+				}
     }
 
     &__name {
+        font-family: 'Lato';
         font-weight: 900;
         font-size: 24px;
         line-height: 1.2;
+
+        margin-bottom: 10px;
     }
 
     &__text {
+        font-family: 'Roboto';
         font-weight: 500;
-        font-size: 18px;
-        line-height: 1.16;
+        font-size: 16px;
+        line-height: 1.1;
+
+        width: 112px;
+        margin: 0 auto;
     }
 }
 

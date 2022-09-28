@@ -47,25 +47,14 @@
   }
 
   &__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 25px;
-    width: 76px;
-   
-    &:not(:last-child) {
-      @include buttons-style;
-    }
-
+  
     &:not(:first-child) {
       @include border-style;
     }
-        
   }
 
   &__button {
-   color: #DEFFE1;
+   color: $secondary-color;
   }
 
   &__rights {
@@ -73,7 +62,7 @@
     line-height: 1.22;
     text-align: left;
   
-    color: #BDC1BE;
+    color: $secondary-color;
 
     @media (min-width:768px) {
       text-align: center;

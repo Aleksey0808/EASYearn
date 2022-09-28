@@ -1,0 +1,21 @@
+.platform {
+
+  &_title {}
+
+  &__text {}
+}
+
+.position {
+
+  &__title {}
+
+  &__text {}
+
+  &__button {
+    @include buttons-style;
+  }
+}
+
+.button {
+ 
+}
