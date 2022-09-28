@@ -13,6 +13,12 @@
     background-clip: text;
    
     margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      font-size: 36px;
+      line-height: 1.27;
+      text-align: center;
+    }
   }
 
   &__text {
@@ -29,7 +35,15 @@
     display: flex;
     column-gap: 20px;
 
-    margin-bottom: 60px;
+    @media (max-width: 767px) {
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: 768px) {
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
   }
 
   &__item {
@@ -60,5 +74,26 @@
     text-align: left;
   
     color: #BDC1BE;
+
+    @media (min-width:768px) {
+      text-align: center;
+    }
+  }
+
+  &__imag {
+    margin: 0 auto;
+
+    max-width: 800px;
+    height: 600px;
+
+    background-image: url("/images/hero/Studio_Display-removebg-preview.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }

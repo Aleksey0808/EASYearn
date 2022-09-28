@@ -1,0 +1,54 @@
+.works {
+    padding-top: 80px;
+
+    &__title {
+        font-size: 32px;
+        line-height: 1.28;
+        text-align: center;
+
+        background: linear-gradient(89.97deg, #5748FF 19.47%, #873EFF 110.15%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.16;
+
+        
+    }
+
+    &__list {
+        text-align: center;
+        color: $works-color;
+    }
+
+    &__imag {
+
+    }
+
+    &__item {
+        border: 1px solid #A59DFF;
+        backdrop-filter: blur(2px);
+        border-radius: 15px;
+
+        padding: 43px 43px 35px;
+    }
+
+    &__name {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.16;
+    }
+}
+
+.title {
+}
