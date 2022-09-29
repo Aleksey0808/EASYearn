@@ -67,11 +67,11 @@
           eu, pretium quis, sem. Nulla consequat massa quis enim.
         </p>
         <ul class="hero__list">
-          <li class="hero__item button">
-            <button class="hero__button">START</button>
+          <li class="hero__item">
+            <button type="button" class="hero__button button">START</button>
           </li>
           <li class="hero__item">
-            <button class="hero__button">ABOUT IT</button>
+            <button type="button" class="hero__button">ABOUT IT</button>
           </li>
         </ul>
         <p class="hero__rights ">&#169; 2022 EASYearn. All rights reserved</p>
@@ -128,18 +128,68 @@
     </div>
   </div>
   <div class="platform section">
-    <div class="container">
+    <div class="container platform__wrapper">
+     <div class="platform__hero">
       <h2 class="platform_title">CHOOSE PLATFORM</h2>
       <p class="platform__text">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
       </p>
-      <div class="position">
-        <h3 class="position__title">PLATFORM #1</h3>
-        <p class="position__text">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-        </p>
-        <button type="button" class="position__button">BUY NOW</button>
-      </div>
+     </div>
+      <ul class="position">
+        <div>
+          <li class="position__item">
+            <h3 class="position__title">PLATFORM #1</h3>
+            <p class="position__text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+            </p>
+            <button type="button" class="position__button display-none">BUY NOW</button>
+          </li>
+          <li class="position__item display-none">
+            <h3 class="position__title">PLATFORM #1</h3>
+            <p class="position__text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+            </p>
+            <button type="button" class="position__button display-none">BUY NOW</button>
+          </li>
+        </div>
+        <div>
+          <li class="position__item display-none">
+            <h3 class="position__title">PLATFORM #1</h3>
+            <p class="position__text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+            </p>
+            <button type="button" class="position__button display-none">BUY NOW</button>
+          </li>
+          <li class="position__item display-none">
+            <h3 class="position__title">PLATFORM #1</h3>
+            <p class="position__text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+            </p>
+            <button type="button" class="position__button display-none">BUY NOW</button>
+          </li>
+        </div>
+      </ul>
+      <button type="button" class="position__button position__button--mobile">BUY NOW</button>
+    </div>
+  </div>
+  <div class="earnmore section">
+    <div class="container">
+      <h2 class="earnmore__title">EARN MORE WITH INVITES</h2>
+      <ul class="earnmore__title__list">
+        <li class="earnmore__item">
+          <p><span>YOU</span>INVITE PEOPLE</p>
+        </li>
+        <li class="earnmore__item">
+          <p><span>WE</span>GIVE BONUSES</p>
+        </li>
+        <li class="earnmore__item">
+          <p><span>INVITED</span>USE PLATFORM</p>
+        </li>
+        <li class="earnmore__item">
+          <p><span>YOU</span>TAKE PERCENT</p>
+        </li>
+        </ul>
+        <a href=""></a>
     </div>
   </div>
   <script src="./js/mobile-menu.js"></script>

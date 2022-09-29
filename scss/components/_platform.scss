@@ -1,21 +1,105 @@
 .platform {
+  padding-top: 80px;
+  background-color: $background-color;
 
-  &_title {}
+  &__wrapper {
+    @media (min-width: 1200px) {
+      display: flex;
+      
+    }
 
-  &__text {}
+  &__hero {
+    @media (min-width: 1200px) {
+     
+    }
+  }
+    
+  }
+
+  &_title {
+    font-family: 'Audiowide';
+    font-size: 48px;
+    line-height: 1.27;
+    text-align: center;
+    letter-spacing: -1.05px;
+  
+    color: #FFFFFF;
+
+    margin-bottom: 26px
+  }
+
+  &__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.77;
+    text-align: center;
+  
+    color: $text-color;
+
+    padding-bottom: 80px;
+  }
 }
 
 .position {
+  @media (min-width: 768px) {
+    display: flex;
+    margin: -15px;
+    }
 
-  &__title {}
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: -0.63px;
+  
+    color: #FFFFFF;
 
-  &__text {}
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-family: 'Roboto';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 2.28;
+      
+      color: $text-color;
+
+      @media (min-width: 768px) {
+        margin-bottom: 20px;
+      }
+  }
+
+  &__item {
+    background: #262837;
+    border-radius: 9px;
+    padding: 20px 15px 36px;
+  
+    margin-bottom: 50px;
+
+    @media (min-width: 768px) {
+        flex-basis: calc((100% - 2 * 30px)/2);
+        margin: 15px;
+      }
+  }
 
   &__button {
+    margin: 0 auto;
+
     @include buttons-style;
   }
 }
 
 .button {
  
+}
+
+.position__button--mobile {
+  display: block;
+  @media (min-width:767px) {
+    display: none;
+  }
+
 }
