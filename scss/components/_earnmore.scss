@@ -1,15 +1,222 @@
 .earnmore {
   padding-top: 80px;
 
-  &__title {}
+  &__wrapper {
+    @media (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      row-gap: 60px;
+    }
+    
+  }
 
-  &__item {}
+  &__title {
 
-  &__link {}
+    @media (max-width: 1199px) {
+      margin-bottom: 60px;
+
+      font-size: 28px;
+      line-height: 1.2;
+
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.6;
+
+        display: block;
+        margin: auto 0 auto 0;
+        width: 360px;
+      }
+  }
+
+  &__list {
+
+    margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    }
+
+    @media (min-width: 1199px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    position: relative;
+    
+    font-family: 'Lato';
+    font-weight: 700;
+    
+    @include title;
+    
+    @media (max-width: 767px) {
+      margin: 0 auto;
+      padding: 0 50px 0 50px;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 768px) {
+      padding: 0 20px;
+    }
+
+    &:not(:last-child)::after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      justify-content: center;
+      background-image: url(/images/earnmore/arrow.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      height: 40px;
+      width: 32px;
+
+      @media (min-width: 768px) {
+        position: absolute;
+        top: 40%;
+        left: 100%;
+        transform: rotate(270deg);
+      }
+    }
+  }
+
+  &__text--first {
+    font-size: 32px;
+    line-height: 1.18;
+
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 1.2;
+
+    padding-bottom: 15px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  &__link {
+    border: 10px solid transparent;
+    border-radius: 10px;
+    background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to right, #A59DFF 0%, #1500FF 100%) border-box;
+  }
+
+  &__links {
+    display: inline-block;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+
+    padding: 20px 24px;
+   
+    @include title;
+  }
 }
 
-.section {}
+.statistics {
 
-.container {}
+  @media (max-width: 1200px) {
+    display: none;
+  }
 
-.title {}
+    @media (min-width: 1200px) {
+    
+      padding: 45px 45px 60px 45px;
+
+      background: #232323;
+      border-radius: 30px;
+
+      font-family: 'Inter';
+      font-size: 16px;
+      line-height: 1.18;
+      color: #FFFFFF;
+    }
+
+    &__wrapper {
+      @media (min-width: 1200px) {
+          display: flex;
+        }
+    }
+
+  &__title {
+    @media (min-width: 1200px) {
+      font-weight: 700;
+
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    @media (min-width: 1200px) {
+      font-weight: 900;
+
+      margin-right: 40px;
+    
+    }
+  }
+
+  &__item {
+    @media (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-bottom: 55px;
+      }
+    }
+  }
+
+  &__list-numbers {
+    @media (min-width: 1200px) {
+
+    }
+  }
+
+  &__items {
+    
+    @media (min-width: 1200px) {
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 1.2;
+
+      &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+    
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(89.97deg, #5748FF 19.47%, #873EFF 66.79%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+  }
+}
+
+.statistics--text-links {
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+
+  @media (min-width: 1200px) {
+    font-family: 'Lato';
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 1.2;
+
+    margin-right: 15px;
+
+    @include title;
+  }
+}
